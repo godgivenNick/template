@@ -1,0 +1,72 @@
+html, body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	
+	text-align: center;
+	
+	* {
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+			margin: 0; padding: 0;
+			
+		border: none;
+			
+		&::after, &::before {
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+			display: inline-block;
+		}
+
+		:active, :hover, :focus, select, option {
+    		outline: 0;
+    		outline-offset: 0;
+    		// border: none;
+		}
+	}
+
+	h1,h2,p {
+		padding: 0;
+		margin: 0;
+	}	
+}
+
+a {
+	text-decoration: none; /* убираем подчеркивания*/
+	color: inherit;
+}
+
+ul {
+	list-style: none;  /* убираем маркировку списка*/
+}
+
+.t-uppercase {
+	text-transform: uppercase;
+}
+
+.f {
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex; 
+	display: flex;
+}
+.f-row {
+	.f;
+	-webkit-flex-flow: row nowrap;
+	    -ms-flex-flow: row nowrap;
+	        flex-flow: row nowrap;
+}
+.f-col {
+	.f;
+	-webkit-flex-flow: column nowrap;
+	    -ms-flex-flow: column nowrap;
+	        flex-flow: column nowrap;
+}
+.f-wrap {
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
